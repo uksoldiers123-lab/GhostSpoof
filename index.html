@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GhostSpoof</title>
+  <link rel="preload" href="assets/fonts/roboto.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="assets/fonts/orbitron.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="assets/css/vibe.css" />
+  <style>
+    /* Inline tweaks for quick palette matching */
+    :root{
+      --bg: #0b0b0f;
+      --card: #111419;
+      --text: #e6e6e6;
+      --muted: #a5a5a5;
+      --blue: #13c5ff;
+      --cyan: #00e6ff;
+      --grad: linear-gradient(90deg, #00f5ff 0%, #4a9aff 60%, #5bffb2 100%);
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-bg" aria-label="Neon background"></div>
+    <div class="header-inner">
+      <h1 class="brand-main">GhostSpoof!</h1>
+      <h2 class="brand-sub">Welcome to GhostSpoof!</h2>
+      <p class="tagline">More minutes and lesse money:</p>
+      <div class="cta-row">
+        <a href="#" class="btn btn-pill">Why Chose</a>
+        <a href="#" class="btn btn-pill btn-outline">Login</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="content">
+    <section class="card">
+      <div class="grid-rows">
+        <div class="row">
+          <div class="col">
+            Caly eMinutest?
+          </div>
+          <div class="col blue-step">50.45</div>
+          <div class="col blue-step">50.22</div>
+        </div>
+        <div class="row">
+          <div class="col">- Feature</div>
+          <div class="col blue-step">50.40</div>
+          <div class="col blue-step">50.20</div>
+        </div>
+        <div class="row">
+          <div class="col">- Sign minutes?</div>
+          <div class="col blue-step">50.25</div>
+          <div class="col blue-step">50.39</div>
+        </div>
+      </div>
+    </section>
+
+    <p class="note">
+      *Get the best price of Spoof calling experience to nuorepit... the best-prieilsh, com, and no coongorist and that minutes.
+    </p>
+  </main>
+
+  <footer class="site-footer">
+    <p>Get the GhostSpoof | SpoofCard, Hushed</p>
+  </footer>
+
+  <!-- Minimal JS for button glow interaction (optional) -->
+  <script>
+    // Simple ripple effect on buttons (optional)
+    document.querySelectorAll('.btn').forEach(btn=>{
+      btn.addEventListener('click', e=>{
+        btn.classList.add('clicked');
+        setTimeout(()=>btn.classList.remove('clicked'), 260);
+      });
+    });
+  </script>
+</body>
+</html>
