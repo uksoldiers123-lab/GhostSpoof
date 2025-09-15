@@ -2,36 +2,24 @@
 
 :root{
   --bg: #0b0b0f;
-  --card: #1a1c22;
-  --text: #eaeefb;
+  --card: #141920;
+  --text: #e9f0ff;
   --muted: #a5a5a5;
-  --blue: #13c5ff;
-  --cyan: #00e6ff;
-  --grad: linear-gradient(90deg, #00f5ff 0%, #3a8cff 60%, #4bffa3 100%);
+  --blue: #14c5ff;
+  --grad: linear-gradient(90deg, #00e6ff 0%, #4bb7ff 50%, #5bffb2 100%);
   --radius: 14px;
 }
-
-* { box-sizing: border-box; }
 
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  background: radial-gradient(circle at 50% -10%, rgba(0,180,255,0.15), transparent 40%),
-              radial-gradient(circle at 0% 100%, rgba(0,180,255,0.12), transparent 40%),
-              var(--bg);
+  background: #0a0a0e;
   color: var(--text);
-  font-family: 'Roboto', system-ui, -apple-system, Arial;
+  font-family: Roboto, system-ui, -apple-system, Arial;
   overflow-x: hidden;
 }
 
-@font-face {
-  font-family: 'Robot';
-  src: url('/assets/fonts/roboto.ttf') format('truetype');
-  font-weight: 400 700;
-  font-style: normal;
-  font-display: swap;
-}
 @font-face {
   font-family: 'Orbitron';
   src: url('/assets/fonts/orbitron.ttf') format('truetype');
@@ -39,17 +27,24 @@ html, body {
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: 'Roboto';
+  src: url('/assets/fonts/roboto.ttf') format('truetype');
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
 
 .brand-main{
   font-family: 'Orbitron', sans-serif;
-  font-size: 64px;
-  letter-spacing: 1px;
+  font-size: 72px;
+  letter-spacing: 2px;
   margin: 0;
   background: var(--grad);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  text-shadow: 0 0 16px rgba(0,212,255,.6);
+  text-shadow: 0 6px 18px rgba(0, 212, 255, .6);
 }
 .brand-sub{
   font-family: 'Roboto', sans-serif;
@@ -64,52 +59,56 @@ html, body {
   margin: 8px 0 14px;
   text-shadow: 0 0 6px rgba(0,180,255,.5);
 }
+
 .header-inner{
   text-align: center;
   padding: 60px 20px 40px;
   position: relative;
   z-index: 1;
 }
+
 .header-bg{
   position: fixed;
-  top:0; left:0; right:0; height: 46vh;
-  background: radial-gradient(circle at 20% 20%, rgba(0,180,255,.25), transparent 40%),
-              radial-gradient(circle at 80% 40%, rgba(0,180,255,.25), transparent 40%),
-              #000;
+  top: 0; left: 0; right: 0; height: 46vh;
+  background: radial-gradient(circle at 25% 20%, rgba(0,180,255,.22), transparent 40%),
+              radial-gradient(circle at 75% 40%, rgba(0,180,255,.22), transparent 40%);
   filter: saturate(120%);
   z-index: 0;
   pointer-events: none;
 }
+
 .cta-row{
   display: inline-flex;
   gap: 14px;
   margin-top: 8px;
 }
+
 .btn{
   padding: 12px 22px;
   border-radius: 999px;
   border: 0;
-  background: #1e2a38;
+  background: #1a2a38;
   color: #e6f2ff;
-  font-weight: 600;
+  font-weight: 700;
   text-decoration: none;
   cursor: pointer;
-  box-shadow: 0 6px 16px rgba(0,0,0,.4);
-  transition: transform .2s ease, box-shadow .2s ease;
+  box-shadow: 0 6px 14px rgba(0,0,0,.4);
+  transition: transform .18s ease, box-shadow .2s ease;
 }
-.btn:hover{ transform: translateY(-1px); box-shadow: 0 8px 22px rgba(0,0,0,.6); }
+.btn:hover{ transform: translateY(-1px); box-shadow: 0 10px 22px rgba(0,0,0,.6); }
 .btn:active{ transform: scale(0.98); }
+
 .btn-outline{
   background: transparent;
   border: 2px solid #4fc3ff;
   color: #eaffff;
 }
 .btn-pill{
-  background: linear-gradient(135deg, #1a2a3a 0%, #0b2233 100%);
+  background: linear-gradient(135deg, #132033 0%, #0b1a2b 100%);
   border: 1px solid rgba(60,180,255,.8);
 }
 .btn-pill:hover{
-  background: linear-gradient(135deg, #1b2a3a 0%, #0a1b2a 100%);
+  background: linear-gradient(135deg, #16273a 0%, #0a1b2a 100%);
   box-shadow: 0 0 0 4px rgba(0, 180, 255, .15);
 }
 
@@ -122,11 +121,11 @@ html, body {
 }
 
 .card{
-  background: #14171e;
+  background: #11151d;
   border-radius: 18px;
   padding: 18px 20px;
-  box-shadow: 0 8px 28px rgba(0,0,0,.6);
-  border: 1px solid rgba(255,255,255,.04);
+  box-shadow: 0 20px 40px rgba(0,0,0,.6);
+  border: 1px solid rgba(255,255,255,.05);
   margin: 20px auto;
   width: 90%;
   max-width: 860px;
@@ -141,8 +140,8 @@ html, body {
 .col{
   padding: 8px 6px;
   border-radius: 6px;
-  background: #1b2430;
-  color: #d8eaff;
+  background: #1a2030;
+  color: #e0edff;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
 }
@@ -151,6 +150,7 @@ html, body {
   border: 1px solid #204f88;
   color: #cfeaff;
   text-align: center;
+  font-weight: 700;
 }
 .note{
   color: #cbd8ff;
@@ -159,11 +159,4 @@ html, body {
   line-height: 1.4;
   margin: 14px auto 0;
   max-width: 740px;
-}
-
-.site-footer{
-  text-align: center;
-  padding: 20px;
-  color: #9fb4ff;
-  font-size: 12px;
 }
